@@ -2,7 +2,7 @@
 Generates a python class containing all methods and resources of a google api from its discovery document.
 
 
-This script generates a python class that resembles the specified google api structure. It was mainly created for the sheets and docs api, so there may be some issues with other apis. The generated class doesn't have any other use than type hinting by default but you can add code to it by using the "method_code" template. This script will create a file called "\<api name>_discovery.py" in the same directory as this script. The generated class inside this file will be called "\<api title>Discovery". The generated class can be used for example as type hint for the `GoogleAPI` object of the [`aiogoogle`](https://github.com/omarryhan/aiogoogle) library. For this to work your code editor or IDE needs to support type hints!
+This script generates a python class that resembles the specified google api structure. It was mainly created for the sheets and docs api, so there may be some issues with other apis. The generated class doesn't have any other use than type hinting by default but you can add code to it by using the "method_code" template. This script will create a file called `<api name>_discovery.py` in the same directory as this script. The generated class inside this file will be called `<api title>Discovery`. The generated class can be used for example as type hint for the `GoogleAPI` object of the [`aiogoogle`](https://github.com/omarryhan/aiogoogle) library. For this to work your code editor or IDE needs to support type hints!
 
 Please open an [issue](https://github.com/arvitus/google-api-class-generator/issues) if you encounter any bugs or errors.
 
