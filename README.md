@@ -12,6 +12,19 @@ Please open an [issue](https://github.com/arvitus/google-api-class-generator/iss
   - Python 3.9+ (tested on 3.11 but should work with 3.9+)
   - black -> `pip install black`
 
+## Usage
+  - download the `google_api_class_generator.py` file and open it
+  - change the values in the config section to your linking and save the file
+  - run the script (`python3 google_api_class_generator.py`)
+  - import the generated class to use it in your code (see [Example](#example))
+
+## Where can I find the discovery document URL?
+  1. Go to the [API Explorer](https://developers.google.com/apis-explorer/) and search for your desired api
+     ![grafik](https://user-images.githubusercontent.com/34866314/210437655-19b7b878-171e-4da0-b3fa-67e71d09cfe6.png)
+  2. Click the name of the API you want to get the discovery document for
+  3. Scroll down to the `Discovery document` section where you can find the url to the discovery document
+     ![grafik](https://user-images.githubusercontent.com/34866314/210437753-6dad4e8e-0a0d-4eb6-a686-8af8dbd63f54.png)
+
 ## Example
   ```py
   from sheets_discovery import GoogleSheetsAPIDiscovery as SheetsTypeHints
@@ -23,6 +36,7 @@ Please open an [issue](https://github.com/arvitus/google-api-class-generator/iss
       )
       result = await aiogoogle.as_service_account(request)
   ```
+
 
 ## Templates
   The class can be customised through the use of templates.
